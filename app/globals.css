@@ -14,15 +14,16 @@ button,input,textarea,select{font:inherit}
 .container{width:min(1180px,calc(100% - 32px));margin-inline:auto}
 .site-shell{background:transparent}
 
-/* Global external background + subtle wind movement */
+/* Global external background from /ext-assets + subtle wind movement */
 .global-bg{position:fixed;inset:0;z-index:0;overflow:hidden;background:#050507;pointer-events:none}
-.global-bg::before{content:"";position:absolute;inset:-4%;background-image:linear-gradient(180deg,rgba(5,5,7,.28),rgba(5,5,7,.62)),url("/ext-assets/AaEHUZMYQGrClDN5HR6QhA-AaEHUZMYJPBcpQdBpMsk2g.jpg");background-size:cover;background-position:center;background-repeat:no-repeat;transform:scale(1.04);animation:bgDrift 24s ease-in-out infinite alternate;will-change:transform,background-position}
-.global-bg::after{content:"";position:absolute;inset:-12%;background:radial-gradient(ellipse at 18% 48%,rgba(255,255,255,.045),transparent 32%),linear-gradient(108deg,transparent 25%,rgba(255,255,255,.035) 48%,transparent 70%);filter:blur(18px);opacity:.55;transform:translate3d(-8%,0,0) skewX(-8deg);animation:windSweep 14s ease-in-out infinite;will-change:transform,opacity}
-.global-bg-motion{position:absolute;inset:-10%;background:linear-gradient(112deg,transparent 20%,rgba(255,255,255,.025) 43%,transparent 64%);filter:blur(24px);opacity:.4;transform:translateX(-18%);animation:windSweepReverse 19s ease-in-out infinite;will-change:transform}
-@keyframes bgDrift{0%{transform:scale(1.04) translate3d(-.4%,0,0);background-position:48% 50%}50%{transform:scale(1.075) translate3d(.35%,-.35%,0);background-position:51% 49%}100%{transform:scale(1.04) translate3d(-.2%,.25%,0);background-position:49% 51%}}
-@keyframes windSweep{0%,100%{transform:translate3d(-10%,1%,0) skewX(-8deg);opacity:.25}50%{transform:translate3d(12%,-1%,0) skewX(-4deg);opacity:.65}}
-@keyframes windSweepReverse{0%,100%{transform:translateX(12%) skewX(-5deg);opacity:.2}50%{transform:translateX(-14%) skewX(-2deg);opacity:.5}}
-@media (prefers-reduced-motion:reduce){.global-bg::before,.global-bg::after,.global-bg-motion{animation:none}}
+.global-bg-image{position:absolute;inset:-3%;width:106%;height:106%;display:block;object-fit:cover;object-position:center;transform:scale(1.035);animation:bgDrift 24s ease-in-out infinite alternate;will-change:transform;filter:saturate(.9) contrast(1.02)}
+.global-bg-overlay{position:absolute;inset:0;background:linear-gradient(180deg,rgba(5,5,7,.24),rgba(5,5,7,.64)),radial-gradient(ellipse at 18% 42%,rgba(124,58,237,.08),transparent 38%),radial-gradient(ellipse at 84% 30%,rgba(14,165,233,.06),transparent 34%)}
+.global-bg-wind{position:absolute;inset:-18%;background:linear-gradient(108deg,transparent 24%,rgba(255,255,255,.035) 47%,transparent 68%);filter:blur(22px);opacity:.5;transform:translate3d(-12%,0,0) skewX(-8deg);animation:windSweep 14s ease-in-out infinite;will-change:transform,opacity}
+.global-bg-wind-two{position:absolute;inset:-18%;background:linear-gradient(112deg,transparent 25%,rgba(255,255,255,.022) 45%,transparent 67%);filter:blur(28px);opacity:.35;transform:translate3d(12%,0,0) skewX(-5deg);animation:windSweepReverse 19s ease-in-out infinite;will-change:transform,opacity}
+@keyframes bgDrift{0%{transform:scale(1.035) translate3d(-.45%,0,0)}50%{transform:scale(1.07) translate3d(.4%,-.3%,0)}100%{transform:scale(1.035) translate3d(-.2%,.25%,0)}}
+@keyframes windSweep{0%,100%{transform:translate3d(-12%,1%,0) skewX(-8deg);opacity:.22}50%{transform:translate3d(12%,-1%,0) skewX(-4deg);opacity:.62}}
+@keyframes windSweepReverse{0%,100%{transform:translate3d(12%,-1%,0) skewX(-5deg);opacity:.18}50%{transform:translate3d(-14%,1%,0) skewX(-2deg);opacity:.48}}
+@media (prefers-reduced-motion:reduce){.global-bg-image,.global-bg-wind,.global-bg-wind-two{animation:none}}
 .muted{color:#9696a3}
 
 .mesh{background:
