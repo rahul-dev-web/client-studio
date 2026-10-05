@@ -50,7 +50,7 @@ button,input,textarea,select{font:inherit}
 .hero-orbit-two{width:170px;height:170px;right:26%;bottom:7%;border:1px solid rgba(56,189,248,.13);animation-delay:-3s}
 
 .eyebrow{display:inline-flex;align-items:center;gap:8px;border:1px solid rgba(255,255,255,.1);background:rgba(255,255,255,.045);border-radius:999px;padding:8px 12px;color:#c8c8d0;font-size:11px;font-weight:800;letter-spacing:.12em;text-transform:uppercase;backdrop-filter:blur(14px)}
-.hero-title{font-size:clamp(3.8rem,7.6vw,7.2rem);line-height:.82;font-weight:950;letter-spacing:-.075em}
+.hero-title{font-size:clamp(3.8rem,7.6vw,7.2rem);line-height:.92;padding-bottom:.08em;font-weight:950;letter-spacing:-.075em}
 .hero-copy{max-width:560px;color:#a0a0aa;font-size:clamp(1rem,1.5vw,1.18rem);line-height:1.8}
 .text-gradient{background:linear-gradient(105deg,#fff 8%,#c4b5fd 46%,#67e8f9 92%);-webkit-background-clip:text;background-clip:text;color:transparent}
 
@@ -77,19 +77,18 @@ button,input,textarea,select{font:inherit}
 .art-panel-side{right:2%;top:20%;width:104px;height:146px;border-radius:20px;padding:15px;display:flex;flex-direction:column;justify-content:space-between;transform:rotate(7deg);color:#9ca3af;font-size:9px;letter-spacing:.18em}
 
 .service-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px}
-.service-card{position:relative;min-height:205px;border:1px solid rgba(255,255,255,.085);border-radius:22px;padding:24px;background:linear-gradient(145deg,rgba(255,255,255,.055),rgba(255,255,255,.018));overflow:hidden;transition:.3s ease}
+.service-card{position:relative;min-height:190px;border:1px solid rgba(255,255,255,.13);border-radius:18px;padding:22px;background:linear-gradient(145deg,rgba(20,20,27,.82),rgba(10,10,15,.68));box-shadow:0 18px 45px rgba(0,0,0,.2),inset 0 1px rgba(255,255,255,.045);backdrop-filter:blur(16px);overflow:hidden;transition:.3s ease}
 .service-card:hover{transform:translateY(-4px);border-color:rgba(167,139,250,.3);background:linear-gradient(145deg,rgba(139,92,246,.11),rgba(255,255,255,.02))}
 .service-number{font-size:10px;color:#777783;letter-spacing:.18em;font-weight:800}
-.service-card h3{margin-top:45px;font-size:1.2rem;font-weight:850;letter-spacing:-.02em}
+.service-card h3{margin-top:38px;font-size:1.2rem;font-weight:850;letter-spacing:-.02em}
 .service-card p{margin-top:8px;color:#898994;font-size:.88rem;line-height:1.6;max-width:260px}
 .service-arrow{position:absolute;right:20px;bottom:20px;color:#6f6f7a;transition:.25s}
 .service-card:hover .service-arrow{color:#c4b5fd;transform:translate(2px,-2px)}
 
-.portfolio-grid{display:grid;grid-template-columns:repeat(12,minmax(0,1fr));gap:12px}
-.portfolio-card{min-height:330px;border-radius:24px;overflow:hidden;border:1px solid rgba(255,255,255,.09);grid-column:span 4}
-.portfolio-card:nth-child(1),.portfolio-card:nth-child(4){grid-column:span 7}
-.portfolio-card:nth-child(2),.portfolio-card:nth-child(3),.portfolio-card:nth-child(5),.portfolio-card:nth-child(6){grid-column:span 5}
-.portfolio-art{height:100%;min-height:330px;position:relative;overflow:hidden;background:#101014}
+.portfolio-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px}
+.portfolio-card{min-height:250px;border-radius:18px;overflow:hidden;border:1px solid rgba(255,255,255,.11);box-shadow:0 18px 50px rgba(0,0,0,.22);grid-column:span 1}
+
+.portfolio-art{height:100%;min-height:250px;position:relative;overflow:hidden;background:#101014}
 .portfolio-art:before{content:"";position:absolute;inset:0;background:linear-gradient(135deg,rgba(255,255,255,.1),transparent 35%,rgba(0,0,0,.4))}
 .portfolio-glow{position:absolute;width:70%;aspect-ratio:1;border-radius:50%;right:-15%;top:-30%;filter:blur(20px);opacity:.75;background:radial-gradient(circle,#8b5cf6,transparent 65%)}
 .portfolio-shape{position:absolute;border:1px solid rgba(255,255,255,.2);transform:rotate(-18deg);border-radius:28px;transition:.6s cubic-bezier(.2,.8,.2,1)}
@@ -97,10 +96,10 @@ button,input,textarea,select{font:inherit}
 .portfolio-shape-b{width:32%;height:54%;right:35%;top:25%;background:linear-gradient(145deg,rgba(255,255,255,.12),transparent);transform:rotate(14deg)}
 .portfolio-card:hover .portfolio-shape-a{transform:rotate(-13deg) translateY(-8px) scale(1.03)}
 .portfolio-card:hover .portfolio-shape-b{transform:rotate(10deg) translateY(5px)}
-.portfolio-copy{position:absolute;left:22px;right:22px;bottom:20px;z-index:2}
+.portfolio-copy{position:absolute;left:18px;right:18px;bottom:17px;z-index:2}
 .portfolio-copy span{display:block;font-size:10px;letter-spacing:.17em;text-transform:uppercase;color:#c4b5fd;font-weight:800}
 .portfolio-copy strong{display:block;margin-top:6px;font-size:clamp(1.4rem,2.4vw,2.2rem);letter-spacing:-.04em;font-weight:900}
-.portfolio-icon{position:absolute;right:20px;top:20px;z-index:2;opacity:.7}
+.portfolio-icon{position:absolute;right:17px;top:17px;z-index:2;opacity:.7}
 .portfolio-cyan .portfolio-glow{background:radial-gradient(circle,#06b6d4,transparent 65%)}
 .portfolio-pink .portfolio-glow{background:radial-gradient(circle,#ec4899,transparent 65%)}
 .portfolio-blue .portfolio-glow{background:radial-gradient(circle,#3b82f6,transparent 65%)}
@@ -140,10 +139,18 @@ button,input,textarea,select{font:inherit}
  .service-card{min-height:175px}
  .service-card h3{margin-top:32px}
  .portfolio-grid{grid-template-columns:1fr;gap:10px}
- .portfolio-card,.portfolio-card:nth-child(n){grid-column:span 1;min-height:285px}
- .portfolio-art{min-height:285px}
+ .portfolio-card,.portfolio-card:nth-child(n){grid-column:span 1;min-height:230px}
+ .portfolio-art{min-height:230px}
  .cta-panel{align-items:stretch;flex-direction:column;border-radius:22px}
 }
 
 .home-capabilities{padding-top:76px}.home-work{padding-top:54px}.home-cta{padding-top:54px}
 @media(max-width:640px){.home-capabilities{padding-top:58px}.home-work,.home-cta{padding-top:42px}}
+
+/* Homepage premium surface refinements */
+.home-capabilities .service-grid{gap:14px}
+.home-capabilities .service-card:before{content:"";position:absolute;inset:0;pointer-events:none;background:radial-gradient(circle at 88% 8%,rgba(139,92,246,.12),transparent 34%),linear-gradient(180deg,rgba(255,255,255,.025),transparent 42%)}
+.home-work .portfolio-card{background:#0b0b10}
+.home-work .portfolio-art:after{content:"";position:absolute;inset:0;pointer-events:none;border:1px solid rgba(255,255,255,.04);border-radius:inherit}
+@media(max-width:900px){.portfolio-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:640px){.portfolio-grid{grid-template-columns:1fr}}
