@@ -17,7 +17,7 @@ export default function Home() {
             <div>
               <div className="eyebrow">
                 <Sparkles size={14} />
-                Creative production studio
+                Creative studio for esports & digital visuals
               </div>
 
               <h1 className="hero-title mt-6">
@@ -26,8 +26,7 @@ export default function Home() {
               </h1>
 
               <p className="hero-copy mt-6 max-w-xl">
-                Premium GFX, esports identities, backgrounds, effects and digital
-                packs — built with the detail of a studio, not a template.
+                Premium GFX, esports identities, backgrounds, effects and digital packs — crafted with a studio-level finish and built to ship.
               </p>
 
               <div className="mt-8 flex flex-col sm:flex-row gap-3">
@@ -40,7 +39,7 @@ export default function Home() {
                 </Link>
               </div>
 
-              <div className="mt-10 flex flex-wrap gap-x-6 gap-y-3 text-xs uppercase tracking-[.18em] text-zinc-500">
+              <div className="mt-8 flex flex-wrap gap-x-6 gap-y-3 text-xs uppercase tracking-[.18em] text-zinc-500">
                 <span>GFX</span><span>Esports</span><span>Branding</span><span>Digital assets</span>
               </div>
             </div>
@@ -68,7 +67,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="section section-tight">
+      <section className="section section-tight home-capabilities">
         <div className="container">
           <div className="section-heading">
             <div>
@@ -91,7 +90,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="section pt-8">
+      <section className="section pt-8 home-work">
         <div className="container">
           <div className="section-heading">
             <div>
