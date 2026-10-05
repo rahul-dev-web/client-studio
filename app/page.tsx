@@ -7,12 +7,12 @@ const visualThemes = ["violet", "cyan", "pink", "blue", "amber", "lime"];
 export default function Home() {
   return (
     <main className="site-shell overflow-hidden">
-      <section className="hero relative min-h-[calc(100svh-4.5rem)] flex items-center">
+      <section className="hero relative flex items-center">
         <div className="hero-orbit hero-orbit-one" />
         <div className="hero-orbit hero-orbit-two" />
         <div className="hero-noise" />
 
-        <div className="container relative z-10 py-16 sm:py-24 lg:py-28">
+        <div className="container relative z-10 py-12 sm:py-16 lg:py-20">
           <div className="grid lg:grid-cols-[1.05fr_.95fr] gap-12 lg:gap-8 items-center">
             <div>
               <div className="eyebrow">
